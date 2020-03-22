@@ -58,7 +58,7 @@ button {
 }
 .modal {
 	max-width: 600px;
-	max-height: 300px;
+	max-height: 600px;
 	margin: 100px auto;
 	overflow-y: auto;
 	background: #fff;
@@ -68,4 +68,7 @@ button {
 }
 .modal-content {
 	padding: 1rem;
+}
+.error{
+	color: red;
 }
