@@ -9,7 +9,7 @@ export class Question {
 		})
 			.then(response => response.json())
 			.then(response => {
-				question.id = response.name
+				question.id = response.name;
 				return question
 			})
 			.then(addToLocalStorage)
@@ -20,7 +20,7 @@ export class Question {
 
 		const html = questions.length
 			? questions.map(toCard).join('')
-			: `<div class="mui&#45;&#45;text-headline">Вы пока ничего не спрашивали</div>`
+			: `<div class="mui&#45;&#45;text-headline">Вы пока ничего не спрашивали</div>`;
 
 		const list = document.getElementById('list');
 
